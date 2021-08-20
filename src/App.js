@@ -1,23 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Rive from "rive-react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{height: "800px", width: "100%", backgroundColor: "#181818"}}>
+      <Rive src="portfolioanimations.riv" artboard="LogoAnimation" animations="Entry" autoPlay/>
     </div>
   );
 }
